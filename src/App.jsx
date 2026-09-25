@@ -5,7 +5,7 @@ import Shop from "./pages/Shop"
 import Catagories from "./pages/Catagories"
 import Contact from "./pages/Contact"
 import Help from "./pages/Help"
-import Login from "./pages/Login"
+import User from "./pages/User"
 import Cart from "./pages/Cart"
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/help" element={<Help/>}/>
         <Route path="/cart" element={<Cart/>}/>
-        <Route path="/user" element={<Login/>}/>
+        <Route path="/user" element={<User/>}/>
       </Routes>
     </div>
   )
