@@ -13,6 +13,7 @@ import Layout from "./layout/Layout"
 const App = () => {
   return (
     <div>
+      <Layout/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/shop" element={<Shop/>}/>
@@ -26,7 +27,7 @@ const App = () => {
       </Routes>
       
 
-      <Layout/>
+      
 
     </div>
   )
