@@ -3,35 +3,40 @@ import { ShoppingCart, User } from "lucide-react"
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center p-4  bg-white shadow">
-         <NavLink to="/"><img className="h-10 pl-6" src="../../public/Almirah_logo.png" alt="" /></NavLink>
-        <div className="md:flex hidden  gap-10">
+    <div className="flex top-0 fixed w-full justify-between items-center py-4 h-[65px] pl-2 pr-4  bg-white shadow">
+         <NavLink to="/"><img className="h-13" src="../../public/Almirah_logo.png" alt="Almirah_logo" /></NavLink>
+        <div className="md:flex hidden text-[16px]  gap-10">
 
             <NavLink
             className={({isActive})=>
-              isActive ? "border-indigo-500 text-[#5B35D5] font-semibold border-b-2 pb-2"  : "font-medium text-[#6B7280]"
+              isActive ? "border-[#5B35D5] text-[#5B35D5] font-semibold border-b-2 pb-1"  : "font-medium text-[#6B7280] pb-1"
             } to="/" >Home </NavLink>
             <NavLink className={({isActive})=>
-              isActive ? "border-indigo-500 text-[#5B35D5] font-semibold border-b-2 pb-2"  : "font-medium text-[#6B7280]"
+              isActive ? "border-[#5B35D5] text-[#5B35D5] font-semibold border-b-2 pb-1"  : "font-medium text-[#6B7280] pb-1"
             }   to="/shop">Shop</NavLink>
             <NavLink className={({isActive})=>
-              isActive ? "border-indigo-500 text-[#5B35D5] font-semibold border-b-2 pb-2"  : "font-medium text-[#6B7280]"
+              isActive ? "border-[#5B35D5] text-[#5B35D5] font-semibold border-b-2 pb-1"  : "font-medium text-[#6B7280] pb-1"
             }   to="/catagories">Catagories</NavLink>
             <NavLink className={({isActive})=>
-              isActive ? "border-indigo-500 text-[#5B35D5] font-semibold border-b-2 pb-2"  : "font-medium text-[#6B7280]"
+              isActive ? "border-[#5B35D5] text-[#5B35D5] font-semibold border-b-2 pb-1"  : "font-medium text-[#6B7280] pb-1"
             }   to="/contact">Contact</NavLink>
             <NavLink className={({isActive})=>
-              isActive ? "border-indigo-500 text-[#5B35D5] font-semibold border-b-2 pb-2"  : "font-medium text-[#6B7280]"
+              isActive ? "border-[#5B35D5] text-[#5B35D5] font-semibold border-b-2 pb-1"  : "font-medium text-[#6B7280] pb-1"
             }   to="/help">Help</NavLink>
         </div>
 
-        <div className="flex gap-6 pr-6">
-            <NavLink className="text-[#5B35D5] " to="/cart">
-            <button><ShoppingCart /></button>
+        <div className="flex gap-6">
+            <NavLink className={({isActive})=>
+              isActive ? " text-[#5B35D5] font-semibold "  : "font-medium text-[#6B7280]"
+            } to="/cart">
+            <button><ShoppingCart size={23} /></button>
             </NavLink>
 
-            <NavLink to="/user">
-            <button><User /></button>
+            <NavLink
+            className={({isActive})=>
+              isActive ? " text-[#5B35D5] font-semibold "  : "font-medium text-[#6B7280]"
+            } to="/account">
+            <button><User size={23} /></button>
             </NavLink>
         </div>
     </div>

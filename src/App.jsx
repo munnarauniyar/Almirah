@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom"
-import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 import Shop from "./pages/Shop"
 import Catagories from "./pages/Catagories"
@@ -7,14 +6,13 @@ import Contact from "./pages/Contact"
 import Help from "./pages/Help"
 import Cart from "./pages/Cart"
 import Wishlist from "./pages/Wishlist"
-import BottomNav from "./components/BottomNav"
 import Account from "./pages/Account"
 import Search from "./pages/Search"
+import Layout from "./layout/Layout"
 
 const App = () => {
   return (
     <div>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/shop" element={<Shop/>}/>
@@ -26,7 +24,9 @@ const App = () => {
         <Route path="/wishlist" element={<Wishlist/>} />
         <Route path="/search" element={<Search/>} />
       </Routes>
-      <BottomNav/>
+      
+
+      <Layout/>
 
     </div>
   )
