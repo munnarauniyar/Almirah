@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom"
 import { ShoppingCart, User } from "lucide-react"
+import logo from "Almirah_logo.png"
 
 const Navbar = () => {
   return (
     <div className="flex z-20 fixed w-full justify-between items-center py-4 h-16 pl-2 pr-4  bg-white shadow">
-         <NavLink to="/"><img className="h-13" src="../../public/Almirah_logo.png" alt="Almirah_logo" /></NavLink>
+         <NavLink to="/"><img className="h-13" src={logo} alt="Almirah_logo" /></NavLink>
         <div className="md:flex hidden text-[16px]  gap-10">
 
             <NavLink
