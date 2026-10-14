@@ -38,8 +38,13 @@ const HeroSection = () => {
           </div>
 
           <div>
-            <h3 className="text-4xl whitespace-nowrap md:text-9xl font-light">Sound Pro</h3>
-            <h3 className="text-4xl whitespace-nowrap md:text-9xl font-bold">A56 Headset</h3>
+            <h3 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-light leading-tight">
+              Sound Pro
+            </h3>
+
+            <h3 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+              A56 Headset
+            </h3>
           </div>
 
 
