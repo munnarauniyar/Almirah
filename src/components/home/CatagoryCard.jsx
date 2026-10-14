@@ -1,7 +1,7 @@
 
 const CatagoryCard = (props) => {
   return (
-    <div className="flex flex-col h-50 w-30 shadow rounded-2xl overflow-hidden">
+    <div className="flex flex-col h-50 w-30 shadow rounded-2xl overflow-hidden shrink-0 hover:scale-105">
         <div className="h-2/3 w-30  overflow-hidden border-b border-gray-100" >
           <img className="h-full w-full object-cover" src={props.img} alt="" />
         </div>

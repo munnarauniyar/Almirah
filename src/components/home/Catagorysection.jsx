@@ -36,9 +36,45 @@ const Catagorysection = () => {
         },
         {
             id: 6,
-            title: "Jeans",
+            title: "Men",
             img: "https://i.pinimg.com/736x/74/43/1d/74431d299abfd9113113120015018562.jpg",
             items: 7
+        }, 
+        {
+            id: 7,
+            title: "Women",
+            img: "https://i.pinimg.com/736x/2d/a9/9a/2da99aa01bb969a5c8c20b54e8470748.jpg",
+            items: 21
+        },
+         {
+            id: 8,
+            title: "Beauty",
+            img: "https://i.pinimg.com/736x/68/fc/01/68fc011259b211b88692d634adf1551f.jpg",
+            items: 10
+        },
+         {
+            id: 9,
+            title: "Gaming",
+            img: "https://i.pinimg.com/736x/44/ba/07/44ba070e3ce7f45a73634342bf57191f.jpg",
+            items: 30
+        },
+         {
+            id: 10,
+            title: "Kids",
+            img: "https://i.pinimg.com/736x/32/79/c4/3279c45ba3c758f604b9f050c9dc88c1.jpg",
+            items: 12
+        },
+         {
+            id: 11,
+            title: "Home",
+            img: "https://i.pinimg.com/736x/28/8a/74/288a74ca157de712c14b0ed6ad22e56b.jpg",
+            items: 10
+        },
+         {
+            id: 12,
+            title: "Sports",
+            img: "https://i.pinimg.com/736x/80/ca/f1/80caf18b5b98cea04b8743e0da27de6c.jpg",
+            items: 20
         },
         {
             id: 7,
@@ -50,7 +86,8 @@ const Catagorysection = () => {
     ]
 
   return (
-    <div className="w-full flex items-center justify-start gap-3 md:gap-10 overflow-x-auto py-5 px-5 md:px-10">
+    <div className="w-full flex justify-start gap-3 md:gap-10 overflow-x-auto py-5 scroll-smooth px-5 md:px-10 scrollbar-none">
+
 
         {data.map((props)=>{
             return <CatagoryCard title={props.title} img={props.img} items={props.items}  />
