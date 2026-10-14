@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 import { ShoppingCart, User } from "lucide-react"
-import logo from "Almirah_logo.png"
+import logo from "Almirahlogo.png"
 
 const Navbar = () => {
   return (
