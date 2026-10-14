@@ -1,4 +1,5 @@
 import CatagoryCard from "./CatagoryCard"
+import { Store } from "lucide-react"
 
 const Catagorysection = () => {
 
@@ -86,7 +87,15 @@ const Catagorysection = () => {
     ]
 
   return (
-    <div className="w-full flex justify-start gap-3 md:gap-10 overflow-x-auto py-5 scroll-smooth px-5 md:px-10 scrollbar-none">
+    <div className="px-5 md:px-10 py-5 ">
+        <div>
+        <h1 className="flex gap-1 md:gap-2 md:pb-2 pb-1 font-bold text-[10px] md:text-xs text-[#5B35D5]"><Store size={13} md:size={16} />Shop by Category</h1>
+         <p className="font-bold text-xl md:text-3xl">Browse by Category</p>
+        </div>
+        
+       <div className="w-full flex justify-start gap-3 md:gap-10 overflow-x-auto md:py-3 py-2 scroll-smooth scrollbar-none">
+
+        
 
 
         {data.map((props)=>{
@@ -95,6 +104,8 @@ const Catagorysection = () => {
         
         
     </div>
+    </div>
+ 
   )
 }
 
