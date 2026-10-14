@@ -33,7 +33,7 @@ const HeroSection = () => {
     <div className="flex items-center justify-between">
         <div className="w-3/5 md:w-6/11 h-full">
 
-        <div className="py-[10px] 0 h-full  flex flex-col items-start justify-center">
+        <div className="py-[10px] h-full  flex flex-col items-start justify-center">
           <div className="h-6 w-15 md:h-10 md:w-20 overflow-hidden flex items-center">
           <img className="h-full w-full object-cover" src="https://logos-world.net/wp-content/uploads/2020/06/Sony-Logo-1961.png" alt="brand logo" />
           </div>
