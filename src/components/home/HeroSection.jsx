@@ -1,7 +1,5 @@
 import { Mic, Search } from "lucide-react"
 import heroimg from "./hero-bg.jpg"
-import Catagorysection from "./Catagorysection"
-
 const HeroSection = () => {
   return (
     <div>
@@ -68,8 +66,6 @@ const HeroSection = () => {
      </div>
 
     </div>
-
-    <Catagorysection />
     </div>
   )
 }

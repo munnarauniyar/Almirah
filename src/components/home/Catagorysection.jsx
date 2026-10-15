@@ -89,7 +89,7 @@ const Catagorysection = () => {
   return (
     <div className="px-5 md:px-10 py-5 ">
         <div>
-        <h1 className="flex gap-1 md:gap-2 md:pb-2 pb-1 font-bold text-[10px] md:text-xs text-[#5B35D5]"><Store size={13} md:size={16} />Shop by Category</h1>
+        <h1 className="flex gap-1 md:gap-2 md:pb-2 pb-1 font-bold text-[12px] md:text-xs text-[#5B35D5]"><Store size={16} md:size={16} />Shop by Category</h1>
          <p className="font-bold text-xl md:text-3xl">Browse by Category</p>
         </div>
         
