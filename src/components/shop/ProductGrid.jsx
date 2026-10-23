@@ -23,12 +23,12 @@ const ProductGrid = ({products}) => {
        </div>
 
        <div className="pt-5 flex gap-3 md:gap-5 overflow-x-auto scrollbar-none">
-        <button className="bg-[#dadada] md:text-sm text-[10px] px-2 shrink-0 rounded-full text-black active:scale-95">All Products</button>
-        <button className="bg-[#dadada] md:text-sm text-[10px] px-2 shrink-0 rounded-full text-black active:scale-95">Electronics</button>
-        <button className="bg-[#dadada] md:text-sm text-[10px] px-2 shrink-0 rounded-full text-black active:scale-95">Fashion</button>
-        <button className="bg-[#dadada] md:text-sm text-[10px] px-2 shrink-0 rounded-full text-black active:scale-95">Beauty</button>
-        <button className="bg-[#dadada] md:text-sm text-[10px] px-2 shrink-0 rounded-full text-black active:scale-95">Sports</button>
-        <button className="bg-[#dadada] md:text-sm text-[10px] px-2 shrink-0 rounded-full text-black active:scale-95">Smart Phones</button>
+        <button className="bg-[#dadada] md:text-sm text-[10px] px-2 py-1 shrink-0 rounded-full text-black active:scale-95">All Products</button>
+        <button className="bg-[#dadada] md:text-sm text-[10px] px-2 py-1 shrink-0 rounded-full text-black active:scale-95">Electronics</button>
+        <button className="bg-[#dadada] md:text-sm text-[10px] px-2 py-1 shrink-0 rounded-full text-black active:scale-95">Fashion</button>
+        <button className="bg-[#dadada] md:text-sm text-[10px] px-2 py-1 shrink-0 rounded-full text-black active:scale-95">Beauty</button>
+        <button className="bg-[#dadada] md:text-sm text-[10px] px-2 py-1 shrink-0 rounded-full text-black active:scale-95">Sports</button>
+        <button className="bg-[#dadada] md:text-sm text-[10px] px-2 py-1 shrink-0 rounded-full text-black active:scale-95">Smart Phones</button>
        </div>
        
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 pt-5">
