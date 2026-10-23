@@ -3,7 +3,7 @@ import heroimg from "./hero-bg.jpg"
 const HeroSection = () => {
   return (
     <div>
-    <div style={{ backgroundImage: `url(${heroimg})`, backgroundPosition: "center",  backgroundSize: "cover"}} className=" from-[#F8F7FF] via-[#EEE9FF] to-[#DCD2FF] pt-19  md:pt-26 p-5 bg-cover bg-center overflow-hidden w-full h-80 md:h-160">
+    <div style={{ backgroundImage: `url(${heroimg})`, backgroundPosition: "center",  backgroundSize: "cover"}} className=" from-[#F8F7FF] via-[#EEE9FF] to-[#DCD2FF] pt-19 md:px-10  md:pt-26 p-5 bg-cover bg-center overflow-hidden w-full h-80 md:h-160">
 
     <div className="relative w-full md:w-[420px]">
   
