@@ -33,7 +33,7 @@ const ProductGrid = ({products}) => {
        
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 pt-5">
      {products.map((elem)=>{
-     return <ProductCard img={elem.image} name={elem.name} category={elem.category} brand={elem.brand} price={elem.price} discription={elem.discription}/>
+     return <ProductCard img={elem.image} name={elem.name} category={elem.category} brand={elem.brand} price={elem.price} description={elem.description}/>
      })}
 
 
