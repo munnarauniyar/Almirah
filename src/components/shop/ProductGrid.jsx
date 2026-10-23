@@ -1,7 +1,8 @@
 import { SlidersHorizontal } from "lucide-react";
 import { Search } from "lucide-react";
+import ProductCard from "./ProductCard";
 
-const ProductGrid = () => {
+const ProductGrid = ({products}) => {
   return (
     <div className="pt-19 px-5 md:px-10">
         <div className="flex justify-between items-center font-bold text-4xl pb-5">
@@ -22,15 +23,22 @@ const ProductGrid = () => {
        </div>
 
        <div className="pt-5 flex gap-3 md:gap-5 overflow-x-auto scrollbar-none">
-        <button className="bg-[#dadada] text-[10px] px-2 shrink-0 rounded-full text-black active:scale-95">All Products</button>
-        <button className="bg-[#dadada] text-[10px] px-2 shrink-0 rounded-full text-black active:scale-95">Electronics</button>
-        <button className="bg-[#dadada] text-[10px] px-2 shrink-0 rounded-full text-black active:scale-95">Fashion</button>
-        <button className="bg-[#dadada] text-[10px] px-2 shrink-0 rounded-full text-black active:scale-95">Beauty</button>
-        <button className="bg-[#dadada] text-[10px] px-2 shrink-0 rounded-full text-black active:scale-95">Sports</button>
-        <button className="bg-[#dadada] text-[10px] px-2 shrink-0 rounded-full text-black active:scale-95">Smart Phones</button>
-
-
+        <button className="bg-[#dadada] md:text-sm text-[10px] px-2 shrink-0 rounded-full text-black active:scale-95">All Products</button>
+        <button className="bg-[#dadada] md:text-sm text-[10px] px-2 shrink-0 rounded-full text-black active:scale-95">Electronics</button>
+        <button className="bg-[#dadada] md:text-sm text-[10px] px-2 shrink-0 rounded-full text-black active:scale-95">Fashion</button>
+        <button className="bg-[#dadada] md:text-sm text-[10px] px-2 shrink-0 rounded-full text-black active:scale-95">Beauty</button>
+        <button className="bg-[#dadada] md:text-sm text-[10px] px-2 shrink-0 rounded-full text-black active:scale-95">Sports</button>
+        <button className="bg-[#dadada] md:text-sm text-[10px] px-2 shrink-0 rounded-full text-black active:scale-95">Smart Phones</button>
        </div>
+       
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 pt-5">
+     {products.map((elem)=>{
+     return <ProductCard img={elem.image} name={elem.name} />
+     })}
+
+
+     </div>
+
       
     </div>
   )
