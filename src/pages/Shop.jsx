@@ -2,7 +2,7 @@ import ProductGrid from "../components/shop/ProductGrid"
 import {product} from "../data/product"
 const Shop = () => {
   return (
-    <div>
+    <div className="pb-19">
       <ProductGrid products= {product}/>
     </div>
   )
